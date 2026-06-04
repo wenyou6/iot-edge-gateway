@@ -5,11 +5,11 @@ CFLAGS = -Wall -g
 # 头文件和库文件路径
 INC = -I./include
 LIB_PATH = -L./lib
-LIBS = -lwiringPi -lpthread
+LIBS = -lwiringPi -lpthread -lsqlite3 -ldl -lm
 
 # 项目配置
 TARGET = main
-SRC = main.c aht20.c relay.c 
+SRC = main.c aht20.c relay.c db_ops.c 
 
 # 香橙派部署信息
 PI_IP = 10.245.140.77
