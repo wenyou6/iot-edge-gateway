@@ -9,7 +9,7 @@ LIBS = -lwiringPi -lpthread -lsqlite3 -ldl -lm
 
 # 项目配置
 TARGET = main
-SRC = main.c aht20.c relay.c db_ops.c 
+SRC = main.c aht20.c relay.c db_ops.c mqtt.c mqtt_lib/mqtt.c  
 
 # 香橙派部署信息
 PI_IP = 10.245.140.77
